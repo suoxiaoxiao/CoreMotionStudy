@@ -77,6 +77,7 @@
     maskLayer.frame = CGRectMake(0, 0, width, height);
     maskLayer.contents = (__bridge id)image.CGImage;
     maskLayer.contentsGravity = kCAGravityResizeAspect;
+    
     tempLayer.mask = maskLayer;
     tempLayer.backgroundColor = [self getColor];
     
